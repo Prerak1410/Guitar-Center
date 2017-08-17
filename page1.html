@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page 1</title>
+    <style>
+        body{
+            background-image: url("Prerak3.jpg");
+        }
+        ul {
+            list-style-type: none;
+            margin: 10px;
+            padding: 0;
+            overflow: hidden;
+            background-color: darkgray;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        li {
+            float: left;
+            width: 14%;
+        }
+
+        li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            width: 154px;
+            height: 13px;
+            font-size: large;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: grey;
+        }
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: grey;
+            border: 2px solid black;
+            min-width: 300px;
+            box-shadow: 4px 4px black;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            width: 300px;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        #img1{
+            margin-left: 500px;
+            width: 280px;
+            height: auto;
+        }
+        .main, .one, .two{
+            margin:auto;
+            margin-left:535px;
+            margin-top: 20px;
+        }
+        #last{
+            border-radius: 5px;
+            display: block;
+            border: 1px solid black;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 12px;
+            color: black;
+            width: 200px;
+            height: 25px;
+            font-size: large;
+        }
+        #f {
+            border-radius: 5px;
+            display: block;
+            border: 1px solid black;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 12px;
+            color: black;
+            width: 200px;
+            height:25px;
+            font-size: large;
+        }
+        #h{
+            border-radius: 5px;
+            display: block;
+            border: 1px solid black;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 12px;
+            color: black;
+            width: 200px;
+            height:25px;
+            font-size: large;
+        }
+
+        #displayInfo{
+            display: none;
+            width: 280px;
+            word-wrap: normal;
+            height: auto;
+            margin-left: 500px;
+            text-align: center;
+            padding-top: 2px;
+            font-size: large;
+        }
+        #shippingDetails{
+            display: none;
+            margin-left: 500px;
+            text-align: center;
+            width: 280px;
+            padding-top: 2px;
+            font-size: large;
+        }
+        #price{
+            display: none;
+            margin-left: 500px;
+            text-align: center;
+            width: 280px;
+            padding-top: 2px;
+            font-size: large;
+        }
+
+        #buy{
+            display: inline-block;
+            margin-left: 1000px;
+            width: 80px;
+            height: 30px;
+            color: white;
+            background-color: black;
+            text-align: center;
+            font-size: large;
+        }
+        #buy:hover{
+            background-color: blue;
+        }
+        button:hover{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+<ul>
+    <li class="dropdown">
+        <a style="background-color: grey">Guitars</a>
+        <div class="dropdown-content">
+            <a href="#">Electric Guitars</a>
+            <a href="#">Acoustic Guitars</a>
+            <a href="#">Acoustic-Electric Guitars</a>
+            <a href="#">Classical Guitars</a>
+        </div>
+    <li>
+    <li><a href="#bass">Bass</a></li>
+    <li><a href="#drums">Drums</a></li>
+    <li><a href="#keyboards">Keyoards</a></li>
+    <li><a href="#Dj & lighting">Dj & Lighting</a></li>
+    <li><a href="#used gear">Used Gear</a></li>
+    <li><a href="#Clearance">Clearance</a></li>
+
+</ul>
+
+<div>
+    <img id="img1"/>
+</div>
+
+
+<button type = "button" value = "prev" onclick = "prev()" style="margin-left: 460px; margin-top: 10px; font-size: large">Previous</button>
+
+<button type = "button" value = "next" onclick = "next()" style="margin-left: 210px; font-size: large">Next</button>
+
+<div class="main">
+    <button type="button" onclick="dispInfo()" id="last"> Product Info</button>
+</div>
+<div id = "displayInfo"></div>
+
+<div class="one">
+    <button type="button" onclick="details()" id="f"> Shipping Details</button>
+</div>
+<div id = "shippingDetails"></div>
+
+<div class="two">
+    <button type="button" onclick="price()" id="h">Price</button>
+</div>
+<div id = "price"></div>
+
+<button id="buy" type="button" onclick="buy()">BUY</button>
+
+<script src="page1.js" type="text/javascript"> </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
