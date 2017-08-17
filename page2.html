@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:Num="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Page 2</title>
+    <style>
+        body{
+            background-image: url("Prerak5.jpg");
+        }
+        .both{
+            display: inline-block;
+            border: 2px solid black;
+            width:100%;
+            height:180px;
+            background: linear-gradient(to right,white,lightsteelblue);
+        }
+        #z{
+            position: absolute;
+            height: auto;
+            width: 320px;
+            margin: 20px;
+        }
+        .main, .one, .two{
+            margin-top: 10px;
+            margin-left: 500px;
+        }
+
+        #displayInfo, #shippingDetails, #price{
+            display: block;
+            margin-left: 500px;
+            color: darkblue;
+        }
+
+        .b{
+            position: relative;
+            top:10px;
+            left: 450px;
+            border: 2px solid black;
+            width: 320px;
+            height: 260px;
+            background: radial-gradient(white,lightskyblue);
+            padding-left: 20px;
+            border-radius: 10px;
+            font-size: medium;
+        }
+        #fn{
+            position: relative;
+            left: 2px;
+        }
+
+        #ln{
+            position: relative;
+            left: 4px;
+        }
+
+        #One{
+            position: relative;
+            left: 7px;
+        }
+
+        #Email{
+            position: relative;
+            left: 15px;
+        }
+
+        #Review{
+            border: 2px solid black;
+            border-radius: 10px;
+            background:linear-gradient(white,lightgrey);
+            width:100%;
+            height: 100px;
+            margin-top: 25px;
+            color: darkblue;
+        }
+        #Review_id{
+            padding-left: 10px;
+        }
+        #edit{
+            position: absolute;
+            margin-left: 50px;
+            margin-top: 10px;
+            width: 80px;
+            height: 20px;
+            background: black;
+            color: white;
+            visibility: hidden;
+        }
+        #buy{
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 1200px;
+            width: 80px;
+            height: 20px;
+            background: black;
+            visibility: hidden;
+            color: white;
+        }
+        #buy:hover, #edit:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="both">
+<div>
+    <img id="z" style="margin: 20px"/>
+</div>
+
+<div class="main">
+    <b><i>ProductInfo</i></b>
+</div>
+<div id = "displayInfo"></div>
+
+<div class="one">
+    <b><i>ShippingDetails</i></b>
+</div>
+<div id = "shippingDetails"></div>
+
+<div class="two">
+    <b><i>Price</i></b>
+</div>
+<div id = "price"></div>
+</div>
+
+<div class ="b"> <h2>Purchase Form</h2>
+<form name="myform">
+    FirstName*:<input type="text" name="firstName" id="fn" required><br><br>
+    LastName*:<input type="text" name="lastName" id="ln" required><br><br>
+    Card Num: <input type="text" name="CC" id="One" placeholder="Enter 16 digit cc number" onchange="myFun()" required><br><br>
+    Email Id*:<input type="email" id="Email" required><br><br>
+
+    <button type="button" onclick="validateform()">Go to Review</button>
+</form>
+
+</div>
+<div id="Review">
+    <p id="Review_id"></p>
+    <button type="button" onclick="EDIT()" id="edit">Edit</button>
+    <button type="button" onclick="BUY()" id="buy">BUY</button>
+</div>
+
+
+<script src="page2.js"></script>
+    </body>
+</html>
