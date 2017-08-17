@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page 3</title>
+    <style>
+        #z{
+            position: relative;
+            left: 500px;
+            width: 300px;
+            height: auto;
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+        #h1{
+            position: relative;
+            left: 580px;
+        }
+        #Desc{
+            position: relative;
+            margin: auto;
+            width: 500px;
+            height: 350px;
+            border: 2px solid darkgoldenrod;
+            border-radius: 10px;
+            background: linear-gradient(to right, white, lightblue,white);
+            padding: 10px;
+        }
+        .main, .one, .two, .three{
+            margin-top: 10px;
+        }
+
+        #displayInfo, #shippingDetails, #price{
+            display: block;
+            color: darkblue;
+        }
+        #Ord{
+            display: inline;
+            color: darkblue;
+        }
+        #CONFIRM{
+            color: darkred;
+        }
+        #HOME{
+            float: right;
+            top: 10px;
+        }
+
+    </style>
+</head>
+<body style="background:radial-gradient(white,lightblue,blanchedalmond,lightblue,white); background-repeat: no-repeat ">
+<img id="z">
+<h1 id="h1">Confirmation</h1>
+<div id="Desc">
+    <div class="main">
+        <b><i>ProductInfo</i></b>
+    </div>
+    <div id = "displayInfo"></div>
+
+    <div class="one">
+        <b><i>ShippingDetails</i></b>
+    </div>
+    <div id = "shippingDetails"></div>
+
+    <div class="two">
+        <b><i>Price</i></b>
+    </div>
+    <div id = "price"></div>
+
+    <div class="three">
+        <b><i>Order Number is </i></b>
+        <span id="Ord"></span>
+    </div>
+    <p id="CONFIRM"></p>
+    <button type="button" id="HOME" ><a style="text-decoration: none" href="page1.html">Back To Home</a></button>
+</div>
+<script src="page3.js"></script>
+</body>
+</html>
